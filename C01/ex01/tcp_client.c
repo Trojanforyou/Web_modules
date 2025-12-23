@@ -4,7 +4,7 @@
 bool fill_info(struct sockaddr_in *info)
 {
     info->sin_family = AF_INET;
-    info->sin_port = htons(2000);
+    info->sin_port = htons(3000);
     return(true);
 }
 bool    connection_to_server(int n, int fd, struct sockaddr_in *info)
