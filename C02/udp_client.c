@@ -28,7 +28,7 @@ int main(int ac, char **av)
         exit(EXIT_FAILURE);
     }
     info.sin_family = AF_INET;
-    info.sin_port = htons(2000);
+    info.sin_port = htons(90);
     connect(fd, (struct sockaddr *)&info, sizeof(struct sockaddr_in));
     int sent = send(fd, buf, strlen(buf), 0);
     // ssize_t sent = sendto(fd, buf, strlen(buf), 0, (struct sockaddr *)&info, sizeof(info));
